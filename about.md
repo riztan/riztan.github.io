@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Programador xBase (xBase). Amante del software libre.
+Programador xBase (Harbour). Amante del software libre.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+27 años en mi apasionante mundo de la informática, 25 de haber conocido Clipper (hoy Harbour).
+- Colaborador en el proyecto t-gtk
+- Desarrollador de TPuy.
+- Desarrollador de bots (telegram) con harbour.
 
 ### Contact me
 
-[email@domain.com](mailto:riztan@gmail.com)
+[riztan@gmail.com](mailto:riztan@gmail.com)
