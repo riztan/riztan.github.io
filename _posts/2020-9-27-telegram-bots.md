@@ -3,15 +3,10 @@ layout: post
 title: Creando bots para telegram con Harbour.
 ---
 
-Este es un intento de crear un primer post acerca de la creación de un bot para telegram con Harbour. Próximamente estaré completando la información.
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
-
 En este post se entiende que ud conoce telegram y ha interactuado con algún bot en esta plataforma, tiene conocimientos de programación preferiblemente en Harbour aunque si es desarrollador en otro lenguaje, este documento podría ser una referencia en su desarrollo de bots.
 
-<img src=![_config.yml]({{ site.baseurl }}/images/tlgrm_botfather_01.png) style="zoom: 50%;" /> Para poder interactuar con el API de telegram, debemos obtener un token o credencial que le permita a telegram reconocer nuestro bot, por lo tanto debemos registrar el bot y para eso utilizamos al bot principal al cual podemos buscar a través de la opción de búsqueda en telegram y escribiendo "botFather", lo agregan al contacto y seleccionan "Iniciar". La interacción con botFather no la vamos a desarrollar acá, es bástante intuitiva y existe suficiente material en el internet respecto a cómo registrar un bot en telegram. Entonces, resumimos que se debe solicitar el registro de un nuevo bot, indicarán el nombre y luego obtendrán el TOKEN de su bot. Ese dato deben guardarlo pues es el identificador que utilizarán en la interacción del bot con telegram.
+![_config.yml]({{ site.baseurl }}/images/tlgrm_botfather_01.png 
+Para poder interactuar con el API de telegram, debemos obtener un token o credencial que le permita a telegram reconocer nuestro bot, por lo tanto debemos registrar el bot y para eso utilizamos al bot principal al cual podemos buscar a través de la opción de búsqueda en telegram y escribiendo "botFather", lo agregan al contacto y seleccionan "Iniciar". La interacción con botFather no la vamos a desarrollar acá, es bástante intuitiva y existe suficiente material en el internet respecto a cómo registrar un bot en telegram. Entonces, resumimos que se debe solicitar el registro de un nuevo bot, indicarán el nombre y luego obtendrán el TOKEN de su bot. Ese dato deben guardarlo pues es el identificador que utilizarán en la interacción del bot con telegram.
 
 Para poder interactuar con el API de telegram, debemos obtener un token o credencial que le permita a telegram reconocer nuestro bot, por lo tanto debemos registrar el bot y para eso utilizamos al bot principal al cual podemos buscar a través de la opción de búsqueda en telegram y escribiendo "botFather", lo agregan al contacto y seleccionan "Iniciar". La interacción con botFather no la vamos a desarrollar acá, es bástante intuitiva y existe suficiente material en el internet respecto a cómo registrar un bot en telegram. Entonces, resumimos que se debe solicitar el registro de un nuevo bot, indicarán el nombre y luego obtendrán el TOKEN de su bot. Ese dato deben guardarlo pues es el identificador que utilizarán en la interacción del bot con telegram.
 
