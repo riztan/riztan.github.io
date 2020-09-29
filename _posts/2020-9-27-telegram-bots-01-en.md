@@ -11,8 +11,6 @@ This document is also based on the use of a library called hbtelegram that can b
 
 In order to interact with the telegram API, we must obtain a token or credential that allows telegram to recognize our bot, therefore we must register the bot and for that we use the main bot which we can search through the telegram search option and typing "botFather", add it to the contact and select "Start". The interaction with botFather is not going to be developed here, it is quite intuitive and there is enough material on the Internet about how to register a bot in telegram. So, we will summarize that you must request the registration of a new bot, indicate the name and then get the TOKEN of your bot. This data must be saved because it is the identifier used in the interaction of the bot with telegram.
 
-In order to interact with the telegram API, we must obtain a token or credential that allows telegram to recognize our bot, so we must register the bot and for that we use telegram botFather, we can search for botFather through the telegram search option and typing "botFather", we select it from the search results and then select "Start". The interaction with botFather will not be developed here, it is quite intuitive and there is enough material on the Internet regarding how to register a bot in telegram. So, we summarize that you should request the registration of a new bot, indicate the name and then get the TOKEN of your bot. That data must be saved because that token is the identifier to be used in the interaction of the bot with telegram.
-
 Example of code to instantiate a TelegramBot type object with hbtelegram:
 
 ```c
