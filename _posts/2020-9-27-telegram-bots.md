@@ -42,7 +42,8 @@ getUpdates. Obtendremos todas las actualizaciónes pendientes simplemente tras i
 
 Como se puede observar, es muy simple obtener un objeto de tipo cursor que contiene las entradas (updates) del bot. Ahora necesitamos conocer el contenido de estas entradas, recordemos que podemos tener: mensajes, notas de voz o video, audios, videos, documentos, etc. Entonces, es posible que no tengamos nada pendiente por revisar o muchas entradas, ¿cómo las visualizamos? continuamos con el ejemplo, veamos:
 
->procedure Main()
+```
+procedure Main()
    local oBot, oUpdates
    local cToken := "MI_TOKEN_AQUI"
    oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )
@@ -56,7 +57,7 @@ Como se puede observar, es muy simple obtener un objeto de tipo cursor que conti
       ? oUpdate:cTlgrmJSON
    EndDo
    oBot:end()  // Finalizamos el bot
-
+```
 
 
 Continuará...
