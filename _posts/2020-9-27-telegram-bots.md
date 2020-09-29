@@ -15,11 +15,19 @@ Para poder interactuar con el API de telegram, debemos obtener un token o creden
 
 Ejemplo de código para instanciar un objeto de tipo TelegramBot con hbtelegram:
 
->procedure Main()
->   local oBot
->   local cToken := "MI_TOKEN_AQUI"
->   oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )
->   oBot:end()  // Finalizamos el bot
+procedure Main()
+   local oBot
+   local cToken := "MI_TOKEN_AQUI"
+   oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )
+   oBot:end()  // Finalizamos el bot
+
+```
+  procedure Main()
+   local oBot
+   local cToken := "MI_TOKEN_AQUI"
+   oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )
+   oBot:end()  // Finalizamos el bot
+```
 
 Bien, ya tenemos token, por lo tanto tenemos nuestro bot. Continuamos; en telegram hay dos formas de obtener la información de actualizaciones (updates en telegram), estas actualizaciones o entradas "sin revisar", estos pueden ser: mensajes, notas de voz o video, audios, videos, encuestas entre otros. Entonces para mayor comodidad en lo sucesivo llamaremos a esto: "entradas".
 
