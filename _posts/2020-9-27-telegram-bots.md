@@ -15,18 +15,12 @@ Para poder interactuar con el API de telegram, debemos obtener un token o creden
 
 Ejemplo de código para instanciar un objeto de tipo TelegramBot con hbtelegram:
 
-``procedure Main()`
-
-   `local oBot`
-
-   `local cToken := "MI_TOKEN_AQUI"`
-
-   `oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )`
-
-   `oBot:end()  // Finalizamos el bot`
-
-```
-
+```xbase
+procedure Main()
+   local oBot
+   local cToken := "MI_TOKEN_AQUI"
+   oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )
+   oBot:end()  // Finalizamos el bot
 ```
 
 Bien, ya tenemos token, por lo tanto tenemos nuestro bot. Continuamos; en telegram hay dos formas de obtener la información de actualizaciones (updates en telegram), estas actualizaciones o entradas "sin revisar", estos pueden ser: mensajes, notas de voz o video, audios, videos, encuestas entre otros. Entonces para mayor comodidad en lo sucesivo llamaremos a esto: "entradas".
@@ -41,49 +35,33 @@ De momento en hbtelegram se ofrece el soporte solo para getUpdates, esperamos in
 
 getUpdates. Obtendremos todas las actualizaciónes pendientes simplemente tras invocar este método. Complementando el ejemplo anterior:
 
-`procedure Main()`
-
-   `local oBot, oUpdates`
-
-   `local cToken := "MI_TOKEN_AQUI"`
-
-   `oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )`
-
-   `oUpdates := oBot:getUpdates()`
-
-   `oBot:end()  // Finalizamos el bot`
-
-
+```xbase
+procedure Main()
+   local oBot, oUpdates
+   local cToken := "MI_TOKEN_AQUI"
+   oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )
+   oUpdates := oBot:getUpdates()
+   oBot:end()  // Finalizamos el bot
+```
 
 Como se puede observar, es muy simple obtener un objeto de tipo cursor que contiene las entradas (updates) del bot. Ahora necesitamos conocer el contenido de estas entradas, recordemos que podemos tener: mensajes, notas de voz o video, audios, videos, documentos, etc. Entonces, es posible que no tengamos nada pendiente por revisar o muchas entradas, ¿cómo las visualizamos? continuamos con el ejemplo, veamos:
 
-`procedure Main()`
-
-   `local oBot, oUpdates`
-
-   `local cToken := "MI_TOKEN_AQUI"`
-
-   `oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )`
-
-   `oUpdates := oBot:getUpdates()`
-
-   `While !oUpdates:Eof()`
-
-​      `oUpdate := oUpdate:Current()`
-
-​      `if hb_isNIL(oUpdate)` 
-
-​         `oUpdates:Skip()`
-
-​         `loop`
-
-​      `endif`
-
-​      `? oUpdate:cTlgrmJSON`
-
-   `EndDo`
-
-   `oBot:end()  // Finalizamos el bot`
+```xBase
+procedure Main()
+   local oBot, oUpdates
+   local cToken := "MI_TOKEN_AQUI"
+   oBot := TlgrmBot():New( cToken, "Nombre de mi Bot" )
+   oUpdates := oBot:getUpdates()
+   While !oUpdates:Eof()
+      oUpdate := oUpdate:Current()
+      if hb_isNIL(oUpdate)
+         oUpdates:Skip()
+         loop
+      endif
+      ? oUpdate:cTlgrmJSON
+   EndDo
+   oBot:end()  // Finalizamos el bot
+```
 
 
 
