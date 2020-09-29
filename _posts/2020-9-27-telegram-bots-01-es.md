@@ -108,7 +108,7 @@ Si enviamos algunos mensajes a nuestro bot, al ejecutar este código, veremos en
 
 ![_config.yml]({{site.baseurl}}/images/tlgrm_terminal_01.png)
 
-Si observamos bien los resultados obtenidos, podemos relacionar entonces el contenido JSON recibido y como ha sido procesado por la clase y como queda a disposición. Si la entrada es un mensaje, entonces podemos deducir que tenemos en nuestra entrada "oUpdate" a su vez un objeto "from" que contiene los datos del remitente.  oUpdate:from,  oUpdate:from:id, etc. Podemos conocer con más detalle como está conformada una entrada de tipo mensaje en la documentación que ofrece telegram acá: [https://core.telegram.org/bots/api#message](https://core.telegram.org/bots/api#message) igualmente se puede ver la estructura para cada una de las entradas (updates) que podemos recibir. 
+Si observamos bien los resultados obtenidos, podemos relacionar entonces el contenido JSON recibido y la forma como ha sido procesado por la clase. Si la entrada es un mensaje, entonces podemos deducir que tenemos en nuestra entrada "oUpdate" a su vez un objeto "from" que contiene los datos del remitente.  oUpdate:from,  oUpdate:from:id, etc. Podemos conocer con más detalle como está conformada una entrada de tipo mensaje en la documentación que ofrece telegram acá: [https://core.telegram.org/bots/api#message](https://core.telegram.org/bots/api#message) igualmente se puede ver la estructura para cada una de las entradas (updates) que podemos recibir. 
 
 Continuará...
 
