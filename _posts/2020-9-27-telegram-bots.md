@@ -15,7 +15,7 @@ Para poder interactuar con el API de telegram, debemos obtener un token o creden
 
 Ejemplo de código para instanciar un objeto de tipo TelegramBot con hbtelegram:
 
-```xbase
+```c
 procedure Main()
    local oBot
    local cToken := "MI_TOKEN_AQUI"
@@ -35,7 +35,7 @@ De momento en hbtelegram se ofrece el soporte solo para getUpdates, esperamos in
 
 getUpdates. Obtendremos todas las actualizaciónes pendientes simplemente tras invocar este método. Complementando el ejemplo anterior:
 
-```xbase
+```c
 procedure Main()
    local oBot, oUpdates
    local cToken := "MI_TOKEN_AQUI"
@@ -46,7 +46,7 @@ procedure Main()
 
 Como se puede observar, es muy simple obtener un objeto de tipo cursor que contiene las entradas (updates) del bot. Ahora necesitamos conocer el contenido de estas entradas, recordemos que podemos tener: mensajes, notas de voz o video, audios, videos, documentos, etc. Entonces, es posible que no tengamos nada pendiente por revisar o muchas entradas, ¿cómo las visualizamos? continuamos con el ejemplo, veamos:
 
-```xBase
+```c
 procedure Main()
    local oBot, oUpdates
    local cToken := "MI_TOKEN_AQUI"
